@@ -2,6 +2,9 @@ import bottle
 import os
 import random
 
+@bottle.route('/')
+def index():
+    return 'I am a snake.'
 
 @bottle.route('/static/<path:path>')
 def static(path):
