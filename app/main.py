@@ -6,10 +6,6 @@ import random
 def index():
     return 'This is a snake.'
 
-@bottle.route('/')
-def index():
-    return 'I am a snake.'
-
 @bottle.route('/static/<path:path>')
 def static(path):
     return bottle.static_file(path, root='static/')
