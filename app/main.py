@@ -4,6 +4,10 @@ import random
 
 @bottle.route('/')
 def index():
+    return 'This is a snake.'
+
+@bottle.route('/')
+def index():
     return 'I am a snake.'
 
 @bottle.route('/static/<path:path>')
